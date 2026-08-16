@@ -484,3 +484,13 @@ yuweuii
 yxjsxy
 zijiess
 clawtributors:hidden:end -->
+
+<!-- CASTUO:PUBLIC-SURFACE -->
+## CASTÚO integration boundary
+
+This repository exposes only a bounded public integration surface. Its role, current state and claims are subordinate to the `Traky12/castuo-evolution` control plane.
+
+This repository does not by itself claim production operation, certification, independent validation, customer contracts, revenue, autonomous authority, global federation or legal compliance. Do not publish secrets, credentials, private endpoints, customer data, private evidence or unpublished security findings.
+
+See [`docs/CASTUO_PUBLIC_SURFACE.md`](docs/CASTUO_PUBLIC_SURFACE.md) for the public boundary. `Claim != Evidence`; `CURRENT != TARGET`; promotion requires control-plane authorization.
+<!-- CASTUO:PUBLIC-SURFACE-END -->
