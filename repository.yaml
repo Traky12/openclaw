@@ -1,16 +1,33 @@
-repository: openclaw
-standard_id: CASTUO-REPOSITORY-STANDARD-V1.0
+id: CASTUO-REPOSITORY-OPENCLAW
+name: openclaw
 class: UPSTREAM
-visibility: PUBLIC
-purpose: upstream assistant integration
+visibility: UPSTREAM
 owner: Traky12
-lifecycle: ACTIVE
-implementation_state: CANDIDATE
+parent_system: CASTUO-SYSTEM
+lifecycle: UPSTREAM
+scope: upstream assistant integration or evaluation
+current_state: CANDIDATE
 assurance_level: L0_CONTRACT_DEFINED
 evidence_state: EVIDENCE_PENDING
+production_claim: NOT_CLAIMED
+relationships:
+  upstream: [openclaw/openclaw]
+  downstream: [Castuo-system]
+  peers: []
+claims_blocked:
+  - production
+  - certification
+  - independent_validation
+  - autonomous_authority
+  - commercial_validation
+  - federation
+metadata_source: CASTUO-REPOSITORY-STANDARD-V1.0
+repository: openclaw
+purpose: upstream assistant integration or evaluation
+environment: STAGING
+implementation_state: CANDIDATE
 security_state: EVIDENCE_PENDING
 promotion_state: PROMOTION_BLOCKED
-environment: STAGING
 claims_allowed:
   - documented repository role within declared scope
 claims_blocked:
@@ -21,6 +38,5 @@ claims_blocked:
   - commercial_validation
   - federation
 dependencies: []
-upstream: []
-downstream: []
-metadata_source: CASTUO-REPOSITORY-STANDARD-V1.0
+upstream: [openclaw/openclaw]
+downstream: [Castuo-system]
